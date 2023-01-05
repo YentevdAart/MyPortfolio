@@ -1,0 +1,234 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;  
+  }
+  button, summary {
+    cursor:pointer;
+  }
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--Noto-Serif:@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+	--color-text:#eee;
+}
+
+  h1, h2, h3, h4{
+      font-family: 'Oswald', Arial, Helvetica, sans-serif;
+      color: #eee;
+  }
+  
+  p{
+      font-family:var(--Noto-Serif), serif;
+      color: #eee;
+      line-height: 1.8em;
+      font-size: 1.2em;
+  }
+  
+  body{
+      width:100%;
+      height:auto;
+      background-color:#000;
+      
+    }
+  
+  header{
+
+    margin:4em 5em 0;
+  }
+  
+  header nav{
+    width:100%;
+    display:grid;
+    grid-template-columns:7fr 1fr 1fr ;
+    
+  }
+  header nav a:first-of-type{
+    color: #FF4E00;
+  }
+  header nav a:nth-of-type(2){
+text-decoration: none;
+grid-column-start: 2;
+grid-row-start: 1;
+text-align: right;
+  } 
+
+header nav a:nth-of-type(3){
+text-decoration: none;
+grid-column-start: 3;
+grid-row-start: 1;
+text-align: right;
+
+  }
+  
+  header nav a:nth-of-type(2){
+    text-align: center;
+  }
+  header nav a:nth-of-type(3){
+  text-align: right;}
+
+  header nav a:first-of-type p{
+    margin-top:0.7em;
+    color:#FF4E00;
+    
+  }
+  
+  main{
+      margin:4em 5em;
+  }
+  main ul > h3,
+  main ul > h4{
+    grid-column-start: 2;
+  }
+
+  main ul> h3{
+    font-size:3em;
+  }
+  main ul>h4{
+    font-size:1.2em;
+    font-weight: 100;
+    margin-bottom:1em;
+    opacity: .5;
+    
+  }
+  
+  
+  main ul {
+  list-style:none;
+  }
+  
+  main > ul{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap:2em;
+  }
+  
+  /* main left column */
+ 
+  main > ul li:first-of-type p{
+    width:20em;
+    margin:1.5em 0;
+    text-align: justify;
+  }
+  main > ul li:first-of-type img{
+    width: 2em;
+    height: auto;
+    margin-right: 1em ;
+    vertical-align: middle;
+  }
+  main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(4){
+    margin: 2em 0;
+  }
+  main > ul:first-of-type > li:first-of-type h4,
+  main > ul:first-of-type li:nth-of-type(4) h4{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: .5;
+    margin-top:.5em;
+  }
+
+main > ul li:first-of-type a, 
+main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(4) a{
+text-decoration: none;
+color: #FF4E00;
+  }
+/* github web link */
+main > ul li:first-of-type > a:first-of-type{
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  color: #eee;
+  padding:0.8em 1.2em;
+  background-color: #FF4E00;
+  border-radius: 50px;
+  text-align: center;
+  
+  }
+/* right column */
+  main ul li:nth-of-type(2) h3{
+    font-size:2.5em;
+    margin: 2em 0 .5em 0;
+    font-weight: 100;
+  }
+  main > ul li:nth-of-type(2) > h4{
+    font-size: 1.5em;
+    font-weight: 100;
+    opacity: .5;
+  }
+  main > ul li:nth-of-type(2) > p{
+    width: 78%;
+    margin: 1em 0;
+    justify-content: left;
+  }
+
+  
+/* accesability test */
+
+  main > ul li:nth-of-type(2) > ul{
+    margin-top:1em;
+  }
+ /*hide van lijst*/
+main > ul li:nth-of-type(2)> ul:first-of-type li section {
+  display: none;
+  }
+  main > ul li:nth-of-type(2)> ul:first-of-type li section.show{
+  display: list-item;
+  }
+
+main > ul li:nth-of-type(2)> ul:first-of-type li:nth-of-type(3) section{
+display: grid;
+grid-template-columns: 1fr 1fr;
+  
+  
+  }
+  main > ul li:nth-of-type(2) > ul:first-of-type li:first-of-type section img,
+  main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(3) section img{
+    margin: 1em 0;
+    width: 80%;
+  }
+  main > ul li:nth-of-type(2) > ul li section p{
+    margin: 1em 0;
+    width:80%;
+  
+    }
+  main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(3) p{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+  }
+ 
+ 
+/* container van elk list item van elke ontwerpfase */
+  main > ul li:nth-of-type(2) > ul li{
+    margin: 1em 0 1em 0;
+  }
+ 
+/* button styling */
+main > ul li:nth-of-type(2) > ul li div h4{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #FF4E00;
+    opacity: 1;
+    text-align: center;
+    }
+
+    main > ul li:nth-of-type(2) > ul li div {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      background: linear-gradient(90deg, #212121 0%, transparent 100%);
+      padding: 0 1em;
+      height: 3em;
+    }
+
+ /* button pijl*/
+.arrow{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  background-color:transparent;
+  transform: rotate(45deg);
+ }
+ 
+ 
+
