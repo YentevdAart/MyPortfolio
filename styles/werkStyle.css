@@ -40,7 +40,6 @@ body{
 header{
     width:70%;
     margin: 0 auto;
-    background: linear-gradient(180deg, #212121 0%, transparent 100%);
   }
 header h1{  
     font-size:4em;

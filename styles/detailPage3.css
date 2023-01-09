@@ -78,6 +78,7 @@ text-align: right;
   main{
       margin:4em 5em;
   }
+  
   main ul > h3,
   main ul > h4{
     grid-column-start: 2;
@@ -97,6 +98,7 @@ text-align: right;
   
   main ul {
   list-style:none;
+  margin: 0 auto;
   }
   
   main > ul{
@@ -122,11 +124,12 @@ text-align: right;
     margin: 2em 0;
   }
   main > ul:first-of-type > li:first-of-type h4,
-  main > ul:first-of-type li:nth-of-type(4) h4{
+  main > ul:first-of-type > li:nth-of-type(4) h4{
     font-size: 1.5em;
     font-weight: 100;
     opacity: .5;
     margin-top:.5em;
+    
   }
 
 main > ul li:first-of-type a, 
@@ -134,14 +137,16 @@ main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(4) a{
 text-decoration: none;
 color: #FF4E00;
   }
-/* github web link */
-main > ul li:first-of-type > a:first-of-type{
+/* notion PB link//dowload pdf link */
+main > ul li:first-of-type > a:first-of-type,
+main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(3) section a{
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   color: #eee;
   padding:0.8em 1.2em;
   background-color: #FF4E00;
   border-radius: 50px;
   text-align: center;
+  text-decoration: none;
   
   }
 /* right column */
@@ -168,8 +173,9 @@ main > ul li:first-of-type > a:first-of-type{
     margin-top:1em;
   }
  /*hide van lijst*/
-main > ul li:nth-of-type(2)> ul:first-of-type li section {
-  /* display: none; */
+main > ul li:nth-of-type(2)> ul:first-of-type li:first-of-type section,
+main > ul li:nth-of-type(2)> ul:first-of-type li:nth-of-type(2) section{
+  display: none;
   }
   
 main > ul li:nth-of-type(2)> ul:first-of-type li section.show{
@@ -180,7 +186,8 @@ main > ul li:nth-of-type(2)> ul:first-of-type li section.show{
   /* breedte van elk dropdown list  */
   main > ul li:nth-of-type(2) > ul:first-of-type li:first-of-type section img,
   main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(2) section img,
-  main > ul li:nth-of-type(2) > ul li section p{
+  main > ul li:nth-of-type(2) > ul li section p,
+  main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(4) section img{
     margin: 1em 0;
     width: 80%;
   }
@@ -197,17 +204,17 @@ grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  main > ul li:nth-of-type(2) > ul:first-of-type li:first-of-type section iframe{
-width: 80%;
+  main > ul li:nth-of-type(2) > ul:first-of-type li:first-of-type iframe{
+width: 50%;
   }
   /* main > ul li:nth-of-type(2) > ul li section p{
     margin: 1em 0;
     width:80%;
   
     } */
-  /* main > ul li:nth-of-type(2) > ul:first-of-type li:nth-of-type(3) p{
-    grid-column-start:1 ;
-    grid-column-end: 3;
+    main > ul li:nth-of-type(2) > ul:first-of-type li section {
+padding: 2em 0;
+    }
 
  
 /* container van elk list item van elke ontwerpfase */
