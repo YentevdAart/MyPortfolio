@@ -131,14 +131,10 @@ main ul:nth-of-type(2) li:nth-of-type(2) img{
     width:15em;
 }
 
-footer{
-    width: 70%;
-    margin: 1em auto;
-}
-main >p{
+main > p{
     position: absolute;
     font-size: 1.8em;
-    right: 10.9em;
+    right: 12em;
     top:36.5em;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
@@ -152,7 +148,53 @@ main a{
   background-color: #FF4E00;
   border-radius: 50px;
   text-decoration: none;
-  right: 19em;
+  right: 19.5em;
   top:58em;
   
+}
+footer{
+  width: 70%;
+  margin: 1em auto;
+}
+footer > p{
+  margin: 2em 0 4em 0;
+}
+
+footer section{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+footer section h3{
+font-size: 1.8em;
+font-weight: 100;
+margin-bottom: 2em;
+}
+
+footer section p{
+	font-size: 1em;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  width: 22em;
+  background-color: #252525;
+  padding:20px;
+}
+footer section p:first-of-type{
+  grid-column-start: 1;
+}
+
+footer a:first-of-type img,
+footer a:nth-of-type(2) img{
+	width:1.5em;
+	height: auto;
+	
+}
+footer a:first-of-type img{
+  position: absolute;
+  right: 15em;
+  top:70em;
+}
+footer a:nth-of-type(2) img{
+  position: absolute;
+  right: 15em;
+  top:67em;
 }
