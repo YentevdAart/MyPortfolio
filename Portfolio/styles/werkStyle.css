@@ -1,0 +1,135 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;  
+}
+button, summary {
+	cursor:pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--Noto-Serif:@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+	--color-text:#eee;
+}
+
+
+h1, h2, h3, h4{
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	color: #eee;
+  
+}
+
+p{
+	font-family: var(--Noto-Serif), Serif;
+	color: #eee;
+  font-size: 1.2em;
+}
+
+body{
+    width:100%;
+    height:auto;
+    background-color:#000;
+  }
+
+header{
+    width:70%;
+    margin: 0 auto;
+  }
+header h1{  
+    font-size:4em;
+    text-align: center;
+  }  
+header h2{
+    opacity:50%;
+    font-size:2em;
+    position:absolute;
+    top:1.2em;
+   right:8.5em;
+    text-decoration:underline;
+   
+  }
+header h2:hover{
+    color:white;
+    opacity:100%;
+  }
+header a,
+main ul li p a{
+    color:#FF4E00;
+    text-decoration:underline;
+    font-family:'Noto-serif';
+    font-size:1em;
+  }
+header a:hover{
+    color:white;
+  }
+
+main{
+    margin:4em 0;
+    background-color: #000;
+}
+main h3{
+  font-size: 2em;
+  font-weight: 200;
+}
+main h4{
+  font-weight: 100;
+  opacity: .5;
+  font-size: 1.2em;
+}
+main ul{
+    margin-top: 4em;
+    display:grid;
+    grid-template-columns: 15% 30% 5% 35% 15%;
+    list-style: none;
+    
+}
+
+main ul li{
+padding: 1em 1em;
+margin: 0 auto;
+
+}
+
+main ul li:first-of-type{
+    grid-column-start: 2;
+    grid-column-end:3;
+   
+}
+main ul li img{
+    width: 30em;
+    height:auto;
+}
+main ul li > a{ 
+  text-decoration: none;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	color: #eee;
+  padding: 0.5em 0;
+  background-color: #FF4E00;
+  border-radius: 50px;
+  width:8em;
+  height: auto;
+  text-align: center;
+  box-shadow: 5px 5px 5px black;
+}
+
+main ul li:nth-of-type(2){
+    grid-column-start: 4;
+    grid-column-end:5;
+    background: linear-gradient(90deg, #212121 0%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 0 2em;
+    
+}
+
+main ul li:nth-of-type(2) p{
+  width: 80%;
+  
+}

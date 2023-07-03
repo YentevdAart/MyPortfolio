@@ -1,0 +1,203 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+  box-sizing:border-box;  
+}
+button, summary {
+	cursor:pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	
+	--color-text:#eee;
+}
+
+
+h1, h2, h3, h4{
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	color: #eee;
+}
+h1 ,h2{
+	font-weight: 800;
+}
+p{
+	font-family: 'Noto serif', Arial, Helvetica, sans-serif;
+	color: #eee;
+}
+/****************/
+/* PAGE STYLING */
+/****************/
+body{
+  width:100%;
+  height:auto;
+  background-color:#000;
+}
+
+header h2{
+  font-size:4em;
+}
+header h2:first-of-type{
+  position:absolute;
+  top:3.8em;
+  left:-0.5em;
+  transform:rotate(-90deg);
+}
+header h2:nth-of-type(2){
+position:absolute;
+  top:0.5em;
+  left:1.3em;
+}
+
+main ul {
+  
+  height:auto;
+  margin: 0 auto;
+  display:flex;
+  list-style:none;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main ul li h1{
+  font-size:5em;
+}
+main ul li:first-of-type h1{
+  position: absolute;
+  margin-top: -1em;
+}
+main ul li p{
+	position: absolute;
+	color: #fff;
+	bottom: 0.7em;
+	opacity: .5;
+}
+
+
+main ul li:first-of-type p{
+	left:23em;
+	animation: 5s linear 1s infinite running slidein;
+}
+@keyframes slidein{
+	from {
+		/* pushes the sun down past the viewport */
+		transform: translatex(0vh);
+	  }
+	  to {
+		/* returns the sun to its default position */
+		transform: translatex(4vh);
+
+	  }
+	
+}
+
+main ul li:nth-of-type(2) p{
+	left:65em;
+	animation: 5s linear 1s infinite running slidein2;
+}
+@keyframes slidein2{
+	from {
+		/* pushes the sun down past the viewport */
+		transform: translatex(0vh);
+	  }
+	  to {
+		/* returns the sun to its default position */
+		transform: translatex(4vh);
+
+	  }
+	
+}
+main ul li:nth-of-type(2) h1{
+  position: absolute;
+  margin-top: -1em;
+  padding:0 0 0 .9em;
+}
+
+main ul li:first-of-type a img{
+ 
+  width:auto;
+  height:44em;
+  opacity: 0.5;
+  clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+}
+
+main ul li:nth-of-type(2) a img{
+  width:44em;
+  height:auto;
+  opacity: 0.5;
+  
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+}
+
+main ul li a img:hover{
+  transform: scale(1.05);
+  opacity: 1.0 ;
+}
+main section{
+
+  background:#ffc;
+  position: absolute;
+  height:15em;
+  width:15em;
+  box-shadow: .2em .1em .4em black;
+  padding:1em;
+  left:85em;
+  top:4em;
+  rotate: -5deg;
+  
+  transform: scale(1);
+  animation: loopAnimation 7s infinite;
+  
+  }
+  
+  /* @keyframes loopAnimation {
+
+		10% {
+		  transform: scale(0);
+		}
+		20% {
+		  transform: scale(1);
+		}
+} */
+
+main section h3{
+	font-family: 'Caveat', cursive;
+	font-size: 1.5em;
+	color:#000;
+	padding-bottom: 0.5em;
+}
+main section p{
+	font-family: 'Caveat', cursive;
+	font-size: 1em;
+	color:#000;
+	font-style: italic;
+}
+
+footer p{
+	position: absolute;
+	font-size: 1em;
+	bottom: 13em;
+	left:-2.2em;
+	transform:rotate(-90deg);
+}
+
+footer a:first-of-type img{
+	width:1.5em;
+	height: auto;
+	position: absolute;
+	bottom: 12em;
+	left:98em;
+}
+footer a:nth-of-type(2) img{
+	width:1.5em;
+	height: auto;
+	position: absolute;
+	bottom: 15em;
+	left:98em;
+}
