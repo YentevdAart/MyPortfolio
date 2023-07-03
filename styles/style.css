@@ -156,7 +156,7 @@ main section{
   
   }
   
-  @keyframes loopAnimation {
+  /* @keyframes loopAnimation {
 
 		10% {
 		  transform: scale(0);
@@ -164,7 +164,7 @@ main section{
 		20% {
 		  transform: scale(1);
 		}
-}
+} */
 
 main section h3{
 	font-family: 'Caveat', cursive;
